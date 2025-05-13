@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domki nad Jeziorem</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Domki nad Jeziorem</h1>
+    <p>Prywatna posiad³oœæ, spokój i natura</p>
+  </header>
+
+  <nav>
+    <a href="#oferta">Oferta</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#rezerwacja">Rezerwacja</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="oferta">
+    <h2>Nasza oferta</h2>
+    <p>Oferujemy wynajem nowoczesnych domków letniskowych nad jeziorem, idealnych na wakacje, weekendowy wypad lub rodzinny urlop. Ka¿dy domek posiada taras z widokiem na wodê, aneks kuchenny i miejsce na ognisko.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="images/domek1.jpg" alt="Domek 1" />
+      <img src="images/domek2.jpg" alt="Domek 2" />
+      <img src="images/jezioro.jpg" alt="Jezioro" />
+    </div>
+  </section>
+
+  <section id="rezerwacja">
+    <h2>Rezerwacja</h2>
+    <form action="#" method="post">
+      <label for="name">Imiê i nazwisko:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Data przyjazdu:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="nights">Liczba nocy:</label>
+      <input type="number" id="nights" name="nights" min="1" required />
+
+      <label for="message">Dodatkowe informacje:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Zarezerwuj</button>
+    </form>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Skontaktuj siê z nami, aby zarezerwowaæ pobyt:</p>
+    <ul>
+      <li>Telefon: 123-456-789</li>
+      <li>Email: kontakt@domkinadjeziorem.pl</li>
+      <li>Adres: Jeziorna 1, 00-000 Mazury</li>
+    </ul>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19544.678034731926!2d21.56165442145739!3d53.76354840864748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e1b6321dfc2df5%3A0x6ea0f0f781b75e3!2sMazury!5e0!3m2!1spl!2spl!4v1684265999831!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Domki nad Jeziorem</p>
+  </footer>
+</body>
+</html>
