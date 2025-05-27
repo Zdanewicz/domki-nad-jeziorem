@@ -23,18 +23,60 @@
   </nav>
 
   <section id="oferta">
-    <h2>Nasza oferta</h2>
-    <p>Oferujemy wynajem nowoczesnych domków letniskowych nad jeziorem, idealnych na wakacje, weekendowy wypad lub rodzinny urlop. Każdy domek posiada taras z widokiem na wodę, aneks kuchenny i miejsce na ognisko.</p>
-  </section>
+
+<h2>Nasza oferta</h2>
+<p>Zapraszamy do naszych malowniczo położonych domków letniskowych na Mazurach — idealnego miejsca na wypoczynek w otoczeniu natury, z bezpośrednim dostępem do jeziora i bogatą ofertą atrakcji.</p>
+
+<h3>🌅 Domki z widokiem na jezioro</h3>
+<p>Każdy z naszych domków posiada przestronny taras z widokiem na jezioro, umożliwiający relaks przy porannej kawie czy wieczornym grillu.</p>
+
+<h3>🏡 Drewniany Domek</h3>
+<ul>
+  <li><strong>Dwupoziomowy, największy na posesji</strong></li>
+  <li><strong>Parter:</strong> salon z kuchnią, łazienka</li>
+  <li><strong>Piętro:</strong> dwie sypialnie dla 8 osób</li>
+  <li><strong>Dolny taras:</strong> stół dla 10 osób, kanapy, lodówka, kamienny grill</li>
+  <li><strong>Górny taras:</strong> idealny do opalania</li>
+</ul>
+
+<h3>⛵ Domek Holenderski "Pod Żaglem"</h3>
+<ul>
+  <li><strong>Najbliżej linii brzegowej</strong></li>
+  <li><strong>Widok:</strong> panorama jeziora z salonu i tarasu</li>
+  <li><strong>Sypialnie:</strong> główna z łóżkiem podwójnym, druga z dwoma pojedynczymi (możliwość połączenia)</li>
+  <li><strong>Łazienki:</strong> dwie</li>
+  <li><strong>Dla 4 osób</strong></li>
+</ul>
+
+<h3>🦢 Domek Holenderski "Bocianie Gniazdo"</h3>
+<ul>
+  <li><strong>Na wzgórzu, z dala od innych domków</strong></li>
+  <li><strong>Widok:</strong> panorama dwóch jezior i mazurskich wzgórz</li>
+  <li><strong>Sypialnie:</strong> dwie, plus rozkładana kanapa w salonie (dla 6 osób)</li>
+  <li><strong>Łazienka:</strong> jedna</li>
+  <li><strong>Kuchnia:</strong> przejściowa z jadalnią</li>
+</ul>
+
+<h3>🌊 Wspólne udogodnienia</h3>
+<ul>
+  <li>Wspólna plaża, molo i miejsce na ognisko</li>
+  <li>Sprzęt wodny: łódka, kajak, rower wodny, SUP, kapoki — do wspólnego użytku</li>
+  <li>Wspólna pralnia i zewnętrzny prysznic</li>
+  <li>Każdy domek w pełni wyposażony, klimatyzowany</li>
+</ul>
+
+</section>
 
   <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="gallery">
-      <img src="images/domek1.jpg" alt="Domek 1" />
-      <img src="images/domek2.jpg" alt="Domek 2" />
-      <img src="images/jezioro.jpg" alt="Jezioro" />
-    </div>
-  </section>
+<h2>Galeria</h2>
+<div class="gallery">
+  <img src="images/domek_drewniany.jpg" alt="Drewniany domek z tarasem" />
+  <img src="images/pod_zaglem.jpg" alt="Domek Pod Żaglem nad jeziorem" />
+  <img src="images/bocianie_gniazdo.jpg" alt="Domek Bocianie Gniazdo z panoramą" />
+  <img src="images/jezioro.jpg" alt="Jezioro i wspólne molo" />
+  <img src="images/sprzet_wodny.jpg" alt="Sprzęt wodny dla gości" />
+</div>
+</section>
 
   <section id="rezerwacja">
     <h2>Rezerwacja</h2>
@@ -63,8 +105,8 @@
     <p>Skontaktuj się z nami, aby zarezerwować pobyt:</p>
     <ul>
       <li>Telefon: 123-456-789</li>
-      <li>Email: kontakt@domkinadjeziorem.pl</li>
-      <li>Adres: Jeziorna 1, 00-000 Mazury</li>
+      <li>Email: domkiworzechowie@gmail.com</li>
+      <li>Adres: Orzechowo, 19-330 Stare Juchy</li>
     </ul>
     <div class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19544.678034731926!2d21.56165442145739!3d53.76354840864748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e1b6321dfc2df5%3A0x6ea0f0f781b75e3!2sMazury!5e0!3m2!1spl!2spl!4v1684265999831!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -74,6 +116,53 @@
   <footer>
     <p>&copy; 2025 Domki nad Jeziorem</p>
   </footer>
+
+<style>
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  });
+</script>
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="Podgląd zdjęcia" />
+</div>
 </body>
 </html>
 `
